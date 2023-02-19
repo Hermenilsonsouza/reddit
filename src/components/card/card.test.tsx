@@ -8,6 +8,8 @@ const makeSut = (otherProps?: Partial<CardProps>) => {
   const props: CardProps = {
     authorFullname: 't2_63val2uo',
     title: 'any_title',
+    onPress: jest.fn(),
+    link: 'any_link',
     ups: 44889,
     numComments: 6,
     created: 1676472000.0,

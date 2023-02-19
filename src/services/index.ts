@@ -14,6 +14,7 @@ export const searchData = async (kind: string) => {
       ups: item.data.ups,
       url: item.data.thumbnail,
       id: item.data.id,
+      link: item.data.url,
     };
     return formated;
   });

@@ -10,9 +10,10 @@ const Card: React.FC<CardProps> = ({
   ups,
   url,
   created,
+  onPress,
 }: CardProps) => {
   return (
-    <S.Container>
+    <S.Container onPress={onPress}>
       <S.ThumbnailContainer>
         {url && <S.Image testID="image" source={{uri: url}} />}
       </S.ThumbnailContainer>

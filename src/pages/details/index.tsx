@@ -1,10 +1,11 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import {WebView} from 'react-native-webview';
 
-const Details: React.FC = () => {
+const Details = (props: any) => {
   return (
-    <SafeAreaView>
-      <Text>Details</Text>
+    <SafeAreaView style={{flex: 1}}>
+      <WebView source={{uri: props.route.params?.item}} />
     </SafeAreaView>
   );
 };

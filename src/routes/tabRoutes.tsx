@@ -1,11 +1,12 @@
 import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+import {RootStackParamList} from './routerTypes';
 
 import New from '../pages/new';
 import Top from '../pages/top';
 import Hot from '../pages/hot';
 import Popular from '../pages/popular';
-const Tab = createMaterialTopTabNavigator();
+const Tab = createMaterialTopTabNavigator<RootStackParamList>();
 
 const TabRoutes = () => {
   return (

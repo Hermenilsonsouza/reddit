@@ -5,4 +5,6 @@ export type CardProps = {
   numComments: number;
   url?: string;
   created: number;
+  onPress: () => void;
+  link?: string;
 };

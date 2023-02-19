@@ -10,7 +10,12 @@ import Card from '../../components/card/card';
 import {CardProps} from '../../components/card/types';
 import {searchData} from '../../services';
 
-const Top: React.FC = () => {
+import {RootStackParamList} from '../../routes/routerTypes';
+import {NativeStackScreenProps} from '@react-navigation/native-stack/lib/typescript/src/types';
+
+type NavProps = NativeStackScreenProps<RootStackParamList, 'Top'>;
+
+const Top = ({navigation}: NavProps) => {
   const [data, setdata] = useState();
 
   const update = async () => {
@@ -31,6 +36,7 @@ const Top: React.FC = () => {
         numComments={item.numComments}
         ups={item.ups}
         url={item.url}
+        onPress={() => navigation.navigate('Details', {item: item.title})}
       />
     );
   }
