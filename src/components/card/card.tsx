@@ -18,7 +18,7 @@ const Card: React.FC<CardProps> = ({
       </S.ThumbnailContainer>
       <S.ContainerText>
         <S.DateLabel testID="date">{moment(created).calendar()}</S.DateLabel>
-        <S.Title>{title}</S.Title>
+        <S.Title numberOfLines={2}>{title}</S.Title>
         <S.Footer>
           <S.FooterLabel>{authorFullname}</S.FooterLabel>
           <S.FooterLabel>Score: {ups}</S.FooterLabel>

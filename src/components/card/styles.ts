@@ -1,10 +1,13 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.TouchableOpacity`
-  width: 100%;
+  width: 95%;
   height: 110px;
   flex-direction: row;
   margin: 8px;
+  background-color: #d0d0d0;
+  border-radius: 10px;
+  padding: 2px;
 `;
 
 export const ContainerText = styled.View`

@@ -31,6 +31,8 @@ exports[`Card there is not snapshot when have a image 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     {
+      "backgroundColor": "#d0d0d0",
+      "borderRadius": 10,
       "flexDirection": "row",
       "height": 110,
       "marginBottom": 8,
@@ -38,7 +40,11 @@ exports[`Card there is not snapshot when have a image 1`] = `
       "marginRight": 8,
       "marginTop": 8,
       "opacity": 1,
-      "width": "100%",
+      "paddingBottom": 2,
+      "paddingLeft": 2,
+      "paddingRight": 2,
+      "paddingTop": 2,
+      "width": "95%",
     }
   }
 >
@@ -84,6 +90,7 @@ exports[`Card there is not snapshot when have a image 1`] = `
       01/20/1970
     </Text>
     <Text
+      numberOfLines={2}
       style={
         [
           {
@@ -181,6 +188,8 @@ exports[`Card there is snapshot when have a image 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     {
+      "backgroundColor": "#d0d0d0",
+      "borderRadius": 10,
       "flexDirection": "row",
       "height": 110,
       "marginBottom": 8,
@@ -188,7 +197,11 @@ exports[`Card there is snapshot when have a image 1`] = `
       "marginRight": 8,
       "marginTop": 8,
       "opacity": 1,
-      "width": "100%",
+      "paddingBottom": 2,
+      "paddingLeft": 2,
+      "paddingRight": 2,
+      "paddingTop": 2,
+      "width": "95%",
     }
   }
 >
@@ -251,6 +264,7 @@ exports[`Card there is snapshot when have a image 1`] = `
       01/20/1970
     </Text>
     <Text
+      numberOfLines={2}
       style={
         [
           {
